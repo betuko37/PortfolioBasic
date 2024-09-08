@@ -1,0 +1,250 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px;
+    scroll-behavior: smooth;
+  }
+  .navbar {
+    background-color: rgba(31, 31, 31, 0.9);
+    transition: background-color 0.3s;
+  }
+  .navbar.scrolled {
+    background-color: #1f1f1f;
+  }
+  .navbar-brand, .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+    margin: 0px 20px;
+  }
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    color: #73267e !important;
+  }
+  
+  .btn-cta {
+    background-color: #400c48;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: whitesmoke;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px #400c48;
+  }
+  .btn-cta:hover {
+    background-color: #240728;
+    color: #e0e0e0;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .section.bg-light {
+    background-color: #1f1f1f;
+  }
+  .section.bg-dark {
+    background-color: #1f1f1f;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+  }
+
+  .project-card {
+    background-color: #2c2c2c;
+    border: none;
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 1rem;
+  }
+
+  .card-body {
+    flex: 1; 
+  }
+
+  .card {
+    background-color: #2c2c2c;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; 
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  }
+
+  .card-title {
+    color: white;
+  }
+
+  .card-text {
+    color: #b0b0b0;
+  }
+  .btn-primary {
+    background-color: #400c48;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  .btn-primary:hover {
+    background-color: #400c48;
+  }
+  footer {
+    background-color: #1f1f1f;
+    color: #b0b0b0;
+  }
+  .footer-link {
+    color: #400c48;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+  }
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  .img-fluid {
+    border-radius: 50%;
+  }
+  .form-control, .form-control:focus {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+  .form-control::placeholder {
+    color: #888;
+  }
+
+  /* Mejoras para la Sección de Sobre Mí */
+  .bg-dark {
+    background-color: #1f1f1f !important;
+  }
+  .text-light {
+    color: #e0e0e0 !important;
+  }
+  .section.bg-dark .container {
+    padding: 60px 0;
+  }
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .about-text {
+    flex: 1;
+    max-width: 500px;
+    text-align: justify;
+  }
+  .about-image {
+    flex: 1;
+    max-width: 250px;
+  }
+  .about-image img {
+    width: 100%;
+    border: 5px solid #400c48;
+    border-radius: 10%;
+    box-shadow: 0 4px 12px #400c4856;
+    margin-left: 2rem;
+
+  }
+
+  .s1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn-blue{
+    background-color: rgb(59, 141, 218);
+  }
+
+  .text-hab{
+    margin-bottom: 5rem;
+  }
+
+  .text-pro{
+margin-bottom: 5rem;
+  }
+
+#projects{
+    background-color: #121212 !important;
+}
+
+#contact{
+    background-color: #121212 !important;
+}
+
+  /* Estilos para la sección de habilidades */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skill-item {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .skill-item i {
+    font-size: 2.5rem; /* Aumenta el tamaño del ícono */
+  }
+  
+  .skill-item p {
+    margin: 0;
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+  }
+  
+  .skill-item:hover {
+    transition: .3S;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    color: #6f1f7c;
+    cursor: pointer;
+  }
+  
+
+  /* Estilos personalizados para el modal */
+.modal-content {
+    border: none;
+  }
+  
+  .modal-body img {
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .modal-body h5 {
+    font-size: 1.5rem;
+  }
+  
+  .modal-body p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .modal-body .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .modal-body .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  

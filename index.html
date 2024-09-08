@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="56">
+
+<!-- Encabezado -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Mi Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">Sobre Mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Habilidades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Sección de Presentación -->
+<div class="col-lg-8 mx-auto p-4 py-md-5 s1" >
+    <div class="d-flex align-items-center pb-3 mb-5 border-bottom"></div>
+    
+    <main>
+      <div class="row">
+        <!-- Columna para la imagen -->
+        <div class="col-md-4 text-center">
+          <img src="./desarrollo-web.png" alt="Imagen de presentación" class="img-fluid" style="max-width: 100%; height: 300px; object-fit: contain;">
+        </div>
+  
+        <!-- Columna para el texto -->
+        <div class="col-md-8">
+          <h1 class="text-body-emphasis mb-3">¡Bienvenido a mi Portfolio!</h1>
+          <p class="mb-5">Este es el espacio donde comparto mi pasión por la tecnología y el desarrollo de software. Aquí podrás explorar los proyectos que reflejan mi experiencia y creatividad en Software. Mi objetivo es crear soluciones que no solo resuelvan problemas, sino que también inspiren y aporten valor. Te invito a explorar mi trabajo, y si algo te resuena, no dudes en ponerte en contacto para posibles colaboraciones o simplemente para intercambiar ideas.</p>
+  
+          <div class="mb-5">
+            <a href="#projects" class="btn btn-cta">Explorar mis proyectos</a>
+          </div>
+  
+          <!-- Botones de redes sociales -->
+          <div class="d-flex justify-content-start gap-3 mt-4">
+            <a href="https://wa.me/526621324345" class="btn btn-success mr-3" target="_blank">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.linkedin.com/in/betuko35/" class="btn btn-blue mr-3" target="_blank">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/betuko37" class="btn btn-dark mr-3" target="_blank">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="d-flex align-items-center pb-3 mb-5 border-bottom mt-5"></div>
+  </div>
+  
+
+  
+<!-- Modal  -->
+<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-body text-center">
+          <!-- Imagen del proyecto -->
+          <img id="modalImage" src="" class="img-fluid mb-4" alt="Imagen del proyecto" style="max-height: 300px; object-fit: cover;">
+          
+          <!-- Título del proyecto -->
+          <h5 class="modal-title mb-3" id="modalTitle">Título del Proyecto</h5>
+          
+          <!-- Descripción del proyecto -->
+          <p id="modalDescription">Descripción del proyecto.</p>
+          
+          <!-- Botón para ir a un link -->
+          <a id="modalLink" href="#" class="btn btn-primary mb-3" target="_blank">Repositorio</a>
+          
+          <!-- Botón para cerrar el modal -->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Sección Sobre Mí -->
+<section id="about" class="section bg-dark text-light">
+  <div class="container about-container">
+    <div class="about-text">
+      <h2>Sobre Mí</h2>
+      <p>¡Hola! Soy Jesús Zavala, un apasionado desarrollador de software con una sólida experiencia en Desarrollo Web y otras áreas tecnológicas. Mi enfoque se centra en la creación de soluciones eficientes y de alta calidad, siempre con un toque de creatividad. Disfruto enfrentar desafíos técnicos que me permitan aprender y crecer profesionalmente. Soy un firme creyente en la mejora continua, por lo que siempre busco nuevas oportunidades para expandir mis habilidades y mantenerme al día con las últimas tendencias en la industria del software. Cuando no estoy programando, me gusta dedicar tiempo a proyectos personales y colaborar en iniciativas que impulsen la innovación.</p>
+    </div>
+    <div class="about-image">
+      <img src="./yo.jpg" alt="Tu Imagen">
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Proyectos -->
+<section id="projects" class="section bg-dark">
+    <div class="container">
+      <h2 class="text-center text-light text-pro">Proyectos</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card  project-card">
+            <img src="./R.jpeg" class="card-img-top project-image" alt="Proyecto 1">
+            <div class="card-body ">
+              <h5 class="card-title">Casa Inteligente</h5>
+              <p class="card-text">Desarrollada con C#, SQLite, Arduino.</p>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#projectModal" data-project-id="1">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <img src="./calcu.jpeg" class="card-img-top project-image" alt="Proyecto 2">
+            <div class="card-body">
+              <h5 class="card-title">Calculadora</h5>
+              <p class="card-text">Desarrollada con Android Studio.</p>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#projectModal" data-project-id="2">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <img src="./entity-framework-logo.jpg" class="card-img-top project-image" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">CRUD Web</h5>
+              <p class="card-text">Se desarrollo en c# con Entity Framework y varios paquetes nuget</p>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#projectModal" data-project-id="3">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <img src="./OIP (1).jpeg" class="card-img-top project-image" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">Ecoomerce Pastillas Nexgard</h5>
+              <p class="card-text">Desarrollado en HTML, CSS Y JavaScript</p>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#projectModal" data-project-id="4">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <img src="./xd.png" class="card-img-top project-image" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">Api de Cocketels</h5>
+              <p class="card-text">Desarrollado con HTML, CSS, JavaScript Apis.</p>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#projectModal" data-project-id="5">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <img src="./OIP.jpeg" class="card-img-top project-image" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">CRUD Almacen (escritorio)</h5>
+              <p class="card-text">Desarrollado en Java y MySql.</p>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#projectModal" data-project-id="6">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Sección de Habilidades -->
+<section id="skills" class="section bg-dark text-light">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="text-hab mt-2">Habilidades</h2>
+      </div>
+      <div class="skills-container mt-4">
+        <div class="skill-item">
+          <i class="fab fa-html5 fa-2x"></i> <!-- Ícono de HTML -->
+          <p>HTML</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-css3-alt fa-2x"></i> <!-- Ícono de CSS -->
+          <p>CSS</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js fa-2x"></i> <!-- Ícono de JavaScript -->
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-code fa-2x"></i> <!-- Ícono de código -->
+            <p>C#</p>
+          </div>
+        <div class="skill-item">
+          <i class="fab fa-java fa-2x"></i> <!-- Ícono de Java -->
+          <p>Java</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-database fa-2x"></i> <!-- Ícono de MySQL -->
+            <p>MySQL</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-android fa-2x"></i> <!-- Ícono de Android Studio -->
+            <p>Android Studio</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-microchip fa-2x"></i> <!-- Ícono de Arduino -->
+            <p>Arduino</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-unity fa-2x"></i> <!-- Ícono de Unity -->
+            <p>Unity</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database fa-2x"></i> <!-- Ícono de SQLite -->
+            <p>SQLite</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-cube fa-2x"></i> <!-- Ícono de Blender (alternativo) -->
+            <p>Blender</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-image fa-2x"></i> <!-- Ícono de Photoshop (alternativo) -->
+            <p>Photoshop</p>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+  
+  
+
+<!-- Sección de Contacto -->
+<section id="contact" class="section bg-light">
+  <div class="container">
+    <h2 class="text-center text-light">Contacto</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+  <div class="container">
+    <p>&copy; 2024 Jesus Zavala. Todos los derechos reservados.</p>
+    <p>Desarrollado con <i class="fas fa-heart text-danger"></i> Boostrap</p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
